@@ -90,24 +90,29 @@ public class Board
       gLetter += guess + ", ";
       blank2 = "";
       if(answer.contains(guess))
+      // Is the guess in the answer staement?
       {
         if(Player1 == true)
+        //If its PLayer ones turn add score to PLayer one
         {
           Player1S = PlayerOne.setScore(1);
         }
         if(Player2 == true)
+        //IF its player two turn add score to player two
         {
           Player2S = PlayerTwo.setScore(1);
         }
         for(int i = 0; i < blank.length(); i++)
+        //Loops through blank statement
         {
           if(answer.substring(i,i+1).contains(guess))
+          // is the answer substring equal to the players guess if so it replaces a 
           {
-           blank2 += blank.substring(i,i+1).replace(blank.substring(i,i+1), guess);
+           blank2 += guess;
           }
           else if(gLetter.contains(answer.substring(i,i+1)))
           {
-            blank2 += blank.substring(i,i+1).replace(blank.substring(i,i+1), answer.substring(i,i+1));
+            blank2 += answer.substring(i,i+1);
           }
           else
           {
@@ -115,18 +120,18 @@ public class Board
           }
         }
       }
-      if(!(answer.contains(guess)))
+      else if(!(answer.contains(guess)))
       {
         System.out.println("Thats not in the statement!\n");
         for(int i = 0; i < blank.length(); i++)
         {
           if(answer.substring(i,i+1).contains(guess))
           {
-           blank2 += blank.substring(i,i+1).replace(blank.substring(i,i+1), guess);
+           blank2 += guess;
           }
           else if(gLetter.contains(answer.substring(i,i+1)))
           {
-            blank2 += blank.substring(i,i+1).replace(blank.substring(i,i+1), answer.substring(i,i+1));
+            blank2 += answer.substring(i,i+1);
           }
           else
           {
@@ -158,7 +163,7 @@ public class Board
         System.out.println(PlayerOne.GetName() + " Score: " + PlayerOne.GetScore());
         System.out.println(PlayerTwo.GetName() + " Score: " + PlayerTwo.GetScore());
       }
-      if(Player1S < Player2S)
+      else if(Player1S < Player2S)
       {
         System.out.println(PlayerTwo.GetName() + " Wins!!!");
         System.out.println(PlayerOne.GetName() + " Score: " + PlayerOne.GetScore());
