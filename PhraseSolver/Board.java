@@ -71,7 +71,6 @@ public class Board
   {
     Scanner sc = new Scanner(System.in);
     String answer = loadPhrase();
-    System.out.println(answer);
     String blank = bPhrase(answer);
     System.out.println(blank);
     String gLetter = "";
