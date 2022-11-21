@@ -1,3 +1,6 @@
+package Nim;
+
+
 import java.util.Scanner;
 public class Game {
     private int pieces;
