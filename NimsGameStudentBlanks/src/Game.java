@@ -26,14 +26,16 @@ public class Game {
         System.out.println("How many do you want");
         String take = sc.nextLine();
         int nTake = Integer.parseInt(take);
+        //makes the string a int
 
 
         
-       //TO DO: Grab the user amount of pieces and repeat if it not allowed.
+       //Grab the user amount of pieces and repeat if it not allowed.
         while (!isLegal(nTake)){
+        //Checks if the input returns false and loops if it does.
             takePiece();
         }
-        //TO DO: Adjust the pieces
+        //Updates the variables and prints out who took pieces
         pieces -= nTake;
         currentPlayer.adjustScore(nTake);
         System.out.println(currentPlayer.getName() + " took " + nTake + " pieces.");
@@ -42,7 +44,7 @@ public class Game {
     }
 
     
-    //**TO DO**//
+
     public Player getNextPlayer(){
     //Changes which players turn it is and returns the current player.
         if(currentPlayer == p1)
