@@ -106,15 +106,17 @@ public class Board
         //Loops through blank statement
         {
           if(answer.substring(i,i+1).contains(guess))
-          // is the answer substring equal to the players guess if so it replaces a 
+          // is the answer substring equal to the players guess if so it adds the guess to the blank2 string
           {
            blank2 += guess;
           }
           else if(gLetter.contains(answer.substring(i,i+1)))
+          //checks if the letters in the guessed letters string are in the answer substring, it so it adds that substring to the blank2 string
           {
             blank2 += answer.substring(i,i+1);
           }
           else
+          //adds blaks if the other too conditions are not met
           {
             blank2 += "_";
           }
