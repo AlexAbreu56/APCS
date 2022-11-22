@@ -29,17 +29,18 @@ public class Main {
 
             double x = (Math.random()*2);
             int IntValue = (int)x;
-            if(IntValue == 0)
+            if(IntValue >=1)
             {
                 currentPlayer = p1;
                 
             }
-            else 
+            else
             {
                 currentPlayer = p2;
             }
 
             game.setFirstPlayer(currentPlayer);
+            System.out.println("It's " + currentPlayer.getName() + "'s turn.");
             //This is the loop in which the game will be played
             while(!game.isComplete()){
                 game.takePiece();
