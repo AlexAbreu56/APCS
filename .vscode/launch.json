@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TheFunny",
+            "request": "launch",
+            "mainClass": "TheFunny",
+            "projectName": "APCS_ac3b3c08"
+        },
+        {
+            "type": "java",
             "name": "Launch Main",
             "request": "launch",
             "mainClass": "Nim.Main",
