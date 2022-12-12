@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Review",
+            "request": "launch",
+            "mainClass": "Review",
+            "projectName": "APCS_ac3b3c08"
+        },
+        {
+            "type": "java",
+            "name": "Launch Runner",
+            "request": "launch",
+            "mainClass": "ProjectFinal.Runner",
+            "projectName": "APCS_ac3b3c08"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayListExample",
+            "request": "launch",
+            "mainClass": "ArrayListExample",
+            "projectName": "APCS_ac3b3c08"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArrayListRunner",
+            "request": "launch",
+            "mainClass": "ArrayListRunner",
+            "projectName": "APCS_ac3b3c08"
+        },
+        {
+            "type": "java",
+            "name": "Launch FRQ",
+            "request": "launch",
+            "mainClass": "FRQ",
+            "projectName": "APCS_ac3b3c08"
+        },
+        {
+            "type": "java",
             "name": "Launch SAA",
             "request": "launch",
             "mainClass": "SAA",
