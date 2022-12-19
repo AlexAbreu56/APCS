@@ -9,7 +9,6 @@ ducky
 gassy
 flarp
 quack
-bitch
 super
 array
 phone
