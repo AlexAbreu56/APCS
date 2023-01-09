@@ -22,6 +22,7 @@ public class Activity374 {
         HorseList.add("Quandale");
         HorseList.add("Harley");
         HorseList.add("Jim");
+
       
         ArrayList<String> NewHorseList = new ArrayList<String>();
 
