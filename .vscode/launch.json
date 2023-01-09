@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Activity374",
+            "request": "launch",
+            "mainClass": "Horse.Activity374",
+            "projectName": "APCS_ac3b3c08"
+        },
+        {
+            "type": "java",
             "name": "Launch Review",
             "request": "launch",
             "mainClass": "Review",
