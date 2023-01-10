@@ -19,14 +19,16 @@ public class Activity374 {
         HorseList.add("Sally");
         HorseList.add("John");
         HorseList.add("Holly");
-        HorseList.add("Quandale");
+        HorseList.add("QuandaleDingle");
         HorseList.add("Harley");
         HorseList.add("Jim");
+        //HorseList.add("Jim2");
+
 
       
         ArrayList<String> NewHorseList = new ArrayList<String>();
 
-        for(int i = 0; i < 10; i++)
+        for(int i = 0; i < randNums.length; i++)
         {
             NewHorseList.add(HorseList.get(randNums[i]-1));
         }
